@@ -119,5 +119,11 @@ public class UnsortedListTest<K> {
 		assertEquals("remove first", new Integer(3), list.remove(2));
 	}
 
+    @Test(expected=EmptyListException.class)
+    public void popOnNonEmpty() throws Exception{
+        list.append(1);
+        list.pop();
+    }
 
+    
 }
