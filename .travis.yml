@@ -1,6 +1,10 @@
+sudo: required
+
+language: java
+
 services:
         - docker
 
 before_install:
   - docker build -t tropars/unit-tests .
-
+  - docker run tropars/unit-tests
