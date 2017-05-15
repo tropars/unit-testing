@@ -121,7 +121,7 @@ public class UnsortedListTest<K> {
 
     @Test(expected=EmptyListException.class)
     public void popOnNonEmpty() throws Exception{
-        list.append(1);
+        //        list.append(1);
         list.pop();
     }
 
