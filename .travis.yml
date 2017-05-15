@@ -7,4 +7,5 @@ services:
 
 before_install:
   - docker build -t tropars/unit-tests .
+  - docker run tropars/unit-tests ls -l
   - docker run tropars/unit-tests

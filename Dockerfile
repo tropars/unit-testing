@@ -1,10 +1,12 @@
-FROM debian:latest
+FROM ubuntu:14.04
 
-RUN apt-get update && apt-get install -y maven
+RUN apt-get update && apt-get install -y maven openjdk-7-jre openjdk-7-jdk
 
 WORKDIR /tmp/
 
-COPY src ./
+run mkdir src
+
+COPY src ./src/
 COPY pom.xml ./
 
 CMD mvn package
