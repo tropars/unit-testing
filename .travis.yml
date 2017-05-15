@@ -10,5 +10,5 @@ before_install:
   - docker run tropars/unit-tests
 
 after_success:
-  - docker log  in -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+  - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
   - docker push tropars/unit-tests
