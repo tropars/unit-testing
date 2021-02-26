@@ -25,7 +25,7 @@ public class UnsortedListTest<K> {
 	public void construcFromCollection() throws Exception{
 		UnsortedList<Integer> myList=new MyUnsortedList<Integer>(Arrays.asList(6,5,4,3));
 
-                // this is a simple test
+                // this is a simple test with integers
 		list.append(6);
 		list.append(5);
 		list.append(4);
