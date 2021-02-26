@@ -1,6 +1,6 @@
-FROM ubuntu:14.04
+FROM ubuntu:18.04
 
-RUN apt-get update && apt-get install -y maven openjdk-7-jre openjdk-7-jdk
+RUN apt-get update && apt-get install -y maven openjdk-8-jre openjdk-8-jdk
 
 WORKDIR /tmp/
 
